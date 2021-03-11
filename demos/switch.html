@@ -8,8 +8,8 @@
   <title>Document</title>
   <style>
     .switch {
-      width: 40px;
-      height: 20px;
+      width: 100px;
+      height: 50px;
       border-radius: 30px;
       overflow: hidden;
       vertical-align: middle;
@@ -17,6 +17,7 @@
       display: inline-block;
       background: #ccc;
       box-shadow: 0 0 1px #36a6d4;
+      cursor: pointer;
     }
 
     .switch input {
@@ -27,11 +28,11 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-radius: 50%;
+      border-radius: 100%;
       background: #fff;
       width: 50%;
       height: 100%;
-      transition: all linear 0.2s;
+      transition: all linear 0.15s;
     }
 
     .switch span::before {
@@ -59,28 +60,28 @@
     .switch input:checked+span {
       transform: translateX(100%);
     }
+
+    .model {
+      text-align: center;
+      margin-top: 40px;
+    }
   </style>
 </head>
 
 <body>
-  <section class="model-15">
+  <h4>CSS 实现switch 开关</h4>
+  <section class="model">
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" onchange="onChange(event)">
       <span></span>
     </label>
   </section>
 </body>
 
 <script>
-  const square = v => v * v
-  const double = v => v * 2
-  const addOne = v => v + 1
-
-  const s = [square, double, addOne]
-
-  const pipe = (s, init) => (s.reduce((pre, next) => (next(pre)), init));
-
-  console.log(pipe([square, double, addOne], 3), '===')
+  function onChange(e) {
+    console.log('change', e);
+  };
 </script>
 
 </html>
