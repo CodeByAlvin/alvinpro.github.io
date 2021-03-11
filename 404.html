@@ -2,19 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" http-equiv="refresh" content="0;URL='/'" />
   <title>404</title>
   <script>
-    var fs = require('fs');
-
-    function copyFile(src, dist, cb) {
-      fs.writeFileSync(dist, fs.readFileSync(src));
-    };
-
-    copyFile('./demos/switch.html', 'index.html', () => {
-      window.location.href = 'https://codebyalvin.github.io/demos/switch';
-    });
-
+    sessionStorage.redirect = location.href;
   </script>
 </head>
 
