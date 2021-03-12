@@ -3,45 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>水波纹</title>
   <style>
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 40px;
-      height: 20px;
-      background-color: rgba(0, 0, 0, 0.25);
-      border-radius: 20px;
-      transition: all 0.3s;
-    }
-
-    .switch::after {
-      content: '';
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      border-radius: 18px;
-      background-color: white;
-      top: 1px;
-      left: 1px;
-      transition: all 0.3s;
-    }
-
-    input[type='checkbox']:checked+.switch::after {
-      transform: translateX(20px);
-    }
-
-    input[type='checkbox']:checked+.switch {
-      background-color: #7983ff;
-    }
-
-    .offscreen {
-      position: absolute;
-      left: -9999px;
-    }
-
     /* ---------------水波纹-------------- */
     .wave {
       position: relative;
@@ -108,9 +73,6 @@
 </head>
 
 <body>
-  <h4>CSS 实现switch 开关</h4>
-  <input type="checkbox" id="toggle" class="offscreen" />
-  <label for="toggle" class="switch"></label>
   <h4>CSS 水波纹</h4>
   <div class="wave">
     水波纹效果
@@ -119,11 +81,5 @@
     <div class="wave3"></div>
   </div>
 </body>
-
-<script>
-  function onChange(e) {
-    console.log('change', e);
-  };
-</script>
 
 </html>
