@@ -14,3 +14,7 @@
 
 6. [水波纹效果](https://codebyalvin.github.io/demos/pages/wave.html)
 
+7. [loading动画]](https://codebyalvin.github.io/demos/pages/bouncingoloader.html)
+
+8. [元素高度未知，高度从0转换为自动]](https://codebyalvin.github.io/demos/pages/bouncingoloader.html)
+
