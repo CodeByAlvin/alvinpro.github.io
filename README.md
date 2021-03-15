@@ -16,5 +16,5 @@
 
 7. [loading动画]](https://codebyalvin.github.io/demos/pages/bouncingoloader.html)
 
-8. [元素高度未知，高度从0转换为自动]](https://codebyalvin.github.io/demos/pages/bouncingoloader.html)
+8. [元素高度未知，高度从0转换为自动]](https://codebyalvin.github.io/demos/pages/高度自动转换.html)
 
