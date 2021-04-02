@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圣杯布局</title>
+  <style>
+    * {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .header,.footer {
+      background: #ccc;
+      clear: both;
+    }
+
+    .container {
+      overflow: hidden;
+      padding: 0 150px 0 200px;
+    }
+
+    .left,
+    .middle,
+    .right {
+      float: left;
+    }
+
+    .left {
+      background: yellow;
+      width: 200px;
+      margin-left: -100%;
+      position: relative;
+      right: 200px;
+    }
+
+    .middle {
+      background: tomato;
+      width: 100%;
+    }
+
+    .right {
+      background: turquoise;
+      width: 150px;
+      margin-right: -150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">this is header</div>
+  <div class="container">
+    <div class="middle">一定要给container设置overflow: hidden; 触发BFC 撑开文档</div>
+    <div class="left">left</div>
+    <div class="right">阿斯顿撒right</div>
+  </div>
+  <div class="footer">footer</div>
+</body>
+
+</html>
